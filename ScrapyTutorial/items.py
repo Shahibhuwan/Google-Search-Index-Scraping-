@@ -2,7 +2,8 @@
 #
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
-
+#Scrapped data -> Item Containers -> Json/csv file
+# Scrapped data -> Item Containers -> Pipeline -> SQL/Mongo database . for this activate pipelinez
 import scrapy
 
 

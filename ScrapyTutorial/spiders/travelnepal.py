@@ -22,10 +22,10 @@ class TravelNepal(scrapy.Spider):
             yield items
         # key should same as field name
         #next_page = response.xpath('//td[@class="d6cvqb"][last()]/a/@href').get()
-        next_page= 'https://www.google.com/search?q=Nepal+Travel&sxsrf=ALeKk03svxmI8vLIWsMJGgFCCAUnm4YVpg:1628828037882&ei=hfEVYeypNdXC3LUPh7uGmAM&start='+str(TravelNepal.page_number)+'0&sa=N&ved=2ahUKEwisgOSkka3yAhVVIbcAHYedATM4HhDy0wN6BAgBEDM&biw=795&bih=625'
+        # next_page= 'https://www.google.com/search?q=Nepal+Travel&sxsrf=ALeKk03svxmI8vLIWsMJGgFCCAUnm4YVpg:1628828037882&ei=hfEVYeypNdXC3LUPh7uGmAM&start='+str(TravelNepal.page_number)+'0&sa=N&ved=2ahUKEwisgOSkka3yAhVVIbcAHYedATM4HhDy0wN6BAgBEDM&biw=795&bih=625'
         
-        if TravelNepal.page_number<=100 :
-            TravelNepal.page_number=+1
-            print(next_page)
-            yield response.follow(next_page, callback=self.parse)
+        # if TravelNepal.page_number<=100 :
+        #     TravelNepal.page_number=TravelNepal.page_number+1
+        #     print(TravelNepal.page_number)
+        #     yield response.follow(next_page, callback=self.parse)
 #obey robots.txt false, user_agent middleware 
